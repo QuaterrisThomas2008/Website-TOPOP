@@ -1,0 +1,321 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPOP ENERGY PRODUCTS</title>
+    <style>
+        body {
+            font-family: 'Amaro', sans-serif;
+            background-color: #f2f2f2;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Ensure no horizontal scrollbar */
+        }
+        .container {
+            width: 90%;
+            margin: 50px auto;
+            text-align: center;
+            padding: 30px;
+            border: 4px solid #008000;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1; /* Ensure content is above particles */
+        }
+        h1 {
+            color: #0c0c0c;
+            margin-bottom: 14px;
+        }
+        h2 {
+            color: blue;
+        }
+        .product {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .product h3 {
+            color: green;
+            margin-bottom: 8px;
+        }
+        .product p {
+            color: blue;
+        }
+        .product img {
+            display: block;
+            margin: 10px auto;
+            max-width: 80%;
+            height: auto;
+        }
+        .product button {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #258cd1;
+        }
+        .flavors {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .flavor {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .flavor:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+        /* Styles for navigation and header */
+        header {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #3498db;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Ensure header is above particles */
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: lightgreen;
+            position: relative;
+            z-index: 2; /* Ensure navigation is above particles */
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #333;
+        }
+        /* Particle animation container */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2a9bc0;
+            z-index: -1;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle animation container -->
+    <div id="particles-js"></div>
+
+    <!-- Header and navigation -->
+    <header>
+        <h1>TOPOP ENERGY PRODUCTS</h1>
+    </header>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="FinalizeOrder.html">Finalize</a>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container">
+        <h2>HYDRATION</h2>
+        
+        <!-- Product cards -->
+        <div class="product">
+            <h3>1 Can</h3>
+            <p>$3.99</p>
+            <img src="can.png" alt="1 Can of TOPOP Energy">
+            <button onclick="addToCart('1 Can')">Add to Cart</button>
+            <div class="flavors">
+                <span class="flavor">Lemon-Lime</span>
+                <span class="flavor">Raspberry</span>
+                <span class="flavor">Watermelon</span>
+            </div>
+        </div>
+
+        <div class="product">
+            <h3>4 Pack</h3>
+            <p>$9.99</p>
+            <img src="can.png" alt="4 Pack of TOPOP Energy">
+            <button onclick="addToCart('4 Pack')">Add to Cart</button>
+            <div class="flavors">
+                <span class="flavor">Pineapple</span>
+                <span class="flavor">Orange</span>
+                <span class="flavor">Grapefruit</span>
+            </div>
+        </div>
+
+        <div class="product">
+            <h3>12 Pack</h3>
+            <p>$13.99</p>
+            <img src="can.png" alt="12 Pack of TOPOP Energy">
+            <button onclick="addToCart('12 Pack')">Add to Cart</button>
+            <div class="flavors">
+                <span class="flavor">Strawberry</span>
+                <span class="flavor">Blueberry</span>
+                <span class="flavor">Peach</span>
+            </div>
+        </div>
+
+        <div class="product">
+            <h3>40 Pack</h3>
+            <p>$34.99</p>
+            <img src="can.png" alt="40 Pack of TOPOP Energy">
+            <button onclick="addToCart('40 Pack')">Add to Cart</button>
+            <div class="flavors">
+                <span class="flavor">Mango</span>
+                <span class="flavor">Coconut</span>
+                <span class="flavor">Passion Fruit</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle animation script -->
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+        // Function to handle "Add to Cart" button click
+        function addToCart(product) {
+            alert(`Added ${product} to cart!`);
+            // Add your cart functionality here (e.g., updating a cart object or redirecting to a cart page)
+        }
+    </script>
+</body>
+</html>

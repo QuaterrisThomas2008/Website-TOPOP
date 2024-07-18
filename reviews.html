@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPOP ENERGY REVIEWS!</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your styles.css file -->
+    <!-- Include particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Amaro', sans-serif;
+            background-color: #f2f2f2;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Ensure full background coverage */
+        }
+        .container {
+            width: 90%; /* Adjusted width */
+            margin: 50px auto; /* Centering the container and adding top margin */
+            text-align: center;
+            padding: 30px; /* Added padding */
+            border: 4px solid #008000; /* Increased border size */
+            border-radius: 15px; /* Rounded border */
+            background-color: #ffffff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow */
+            position: relative; /* Ensure z-index works correctly */
+            z-index: 1; /* Ensure content appears above particles */
+        }
+        h1 {
+            color: #0c0c0c;
+            margin-bottom: 14px; /* Add some space below heading */
+        }
+        .review {
+            margin-bottom: 40px; /* Space between reviews */
+            padding: 20px;
+            background-color: #f9f9f9; /* Light gray background */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            text-align: left; /* Align text to left for readability */
+        }
+        .review h2 {
+            color: #008000; /* Green color for review titles */
+            margin-bottom: 10px; /* Space below review titles */
+        }
+        .review p {
+            color: #333333; /* Darker text color */
+        }
+
+        /* Styles for navigation and header */
+        header {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #3498db;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Ensure header is above particles */
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: lightgreen;
+            position: relative; /* Ensure navigation is above particles */
+            z-index: 10; /* Ensure navigation is above particles */
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #333;
+        }
+
+        /* Particle animation container */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2a9bc0;
+            z-index: -1; /* Place particles behind content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Particle animation container -->
+    <div id="particles-js"></div>
+
+    <header>
+        <h1>TOPOP ENERGY DRINK REVIEWS</h1>
+    </header>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="FinalizeOrder.html">Finalize</a>
+    </nav>
+
+    <div class="container">
+        <h2>Customer Reviews</h2>
+
+        <!-- Review 1 -->
+        <div class="review">
+            <h2>Great Taste and Boost of Energy!</h2>
+            <p>I absolutely love the TOPOP Energy Drink! It not only tastes amazing but also gives me the boost of energy I need without any crash afterward. Highly recommended!</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review">
+            <h2>Perfect for My Workout Sessions</h2>
+            <p>As a fitness enthusiast, I've tried various energy drinks, and TOPOP is now my go-to choice. The flavors are refreshing, and it keeps me energized throughout my workouts. Definitely worth trying!</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review">
+            <h2>Excellent Variety and Quality</h2>
+            <p>TOPOP offers a great variety of flavors, and each one is delicious! I appreciate the quality ingredients and how it helps me stay focused and energized during long workdays. Will buy again!</p>
+        </div>
+
+        <!-- Add more reviews as needed -->
+
+    </div>
+
+    <!-- Include particles.js initialization script -->
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>

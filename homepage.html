@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            font-family: 'Amagro', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #050404;
+            position: relative;
+            background-color: #2a9bc0;
+            /* overflow: hidden; Remove this line */
+            overflow-y: scroll; /* Add */
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        header {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #3498db;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Ensure header is above particles */
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: lightgreen;
+            position: relative; /* Ensure navigation is above particles */
+            z-index: 10; /* Ensure navigation is above particles */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #050505;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .hero img {
+            width: 300px;
+            height: auto;
+        }
+
+        .hero h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            margin: 0 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .feature p {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO TOPOP ENERGY!</h1>
+    </header>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="FinalizeOrder.html">Finalize</a>
+    </nav>
+    <span class="cart-icon" id="cart-icon">&#128722;</span>
+
+
+    <!-- Particle animation container -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Unleash Your Energy</h1>
+            <p>Get ready for an electrifying experience with TOPOP Energy Drink. Every TOPOP Energy Drink is a promise to provide you with the best experience; whether that be within its taste, its design, or the way it makes you feel after taking a sip. ᥫ᭡</p>
+            <img src="logoo.png" width="500">
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h2>Boosts Energy</h2>
+                <p>Get an instant energy boost wherever and whenever you need it. TOPOP isn't your normal energy drink, after taking a sip... you'll immediately start to feel that energy boost that'll turn your whole day around. </p>
+            </div>
+            <div class="feature">
+                <h2>Refreshing Taste</h2>
+                <p>Enjoy the delicious and refreshing taste of TOPOP. TOPOP offers multiple flavors including "Lemon-Lime" "Raspberry" "Watermelon" and many more. TOPOP offers diet subsitutes including options for those who are vegan, gluten free, lactose intolerance and many more. Get Yours Today ! 𖤓 </p>
+            </div>
+            <div class="feature">
+                <h2>No Crash</h2>
+                <p>Experience sustained energy without the crash. TOPOP promises to provide customers with the satisfication that they'll experience ZERO to ANY crashout symptoms; these include "Vomiting" "Dizziness" "Upset Stomachs" "Heartburn" and many more.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>

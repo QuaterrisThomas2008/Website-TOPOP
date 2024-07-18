@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TOPOP ENERGY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> <!-- Reset CSS -->
+    <style>
+        /* Reset CSS */
+        body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, footer, header, nav {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* General styling */
+        body {
+            font-family: 'Amaro', sans-serif;
+            background-color: #f2f2f2;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        .container {
+            width: 90%; /* Adjusted width */
+            max-width: 800px; /* Max width to ensure readability */
+            margin: 50px auto; /* Centering the container and adding top margin */
+            text-align: center;
+            padding: 30px; /* Added padding */
+            border: 4px solid #008000; /* Increased border size */
+            border-radius: 15px; /* Rounded border */
+            background-color: #ffffff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow */
+            position: relative; /* Relative positioning for z-index usage */
+            z-index: 1; /* Ensure content is above particles */
+        }
+        h1 {
+            color: #0c0c0c;
+            margin-bottom: 14px; /* Add some space below heading */
+            font-size: 2em; /* Match font size */
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .contact-info p {
+            margin-bottom: 20px; /* Increased space between paragraphs */
+        }
+        .contact-info a {
+            display: block;
+            margin-bottom: 15px; /* Increased space between links */
+            text-decoration: none;
+            color: #0000ff;
+        }
+        .email-logo {
+            width: 80px; /* Enlarged email logo size */
+            vertical-align: middle;
+            margin-top: 10px; /* Adjusted margin for spacing */
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 35px; /* Increased button padding */
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px; /* Slightly rounded button corners */
+            margin: 10px; /* Increased margin around buttons */
+            transition: background-color 0.3s ease; /* Smooth transition */
+            border: none; /* Removed button border */
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker shade on hover */
+        }
+        .button:last-child {
+            margin-right: 0; /* Remove margin from last button */
+        }
+        /* Styles for navigation and header */
+        header {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #3498db;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Ensure header is above particles */
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: lightgreen; /* Green navigation background */
+            position: relative; /* Ensure navigation is above particles */
+            z-index: 2; /* Ensure navigation is above particles */
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #333;
+        }
+        /* Particle animation container */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2a9bc0;
+            z-index: -1; /* Place particles behind content */
+        }
+        /* Form styling */
+        .contact-form {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: none;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative; /* Relative positioning for z-index usage */
+            z-index: 2; /* Ensure footer is above particles */
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle animation container -->
+    <div id="particles-js"></div>
+
+    <header>
+        <h1>CONTACT US NOW!</h1>
+    </header>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="FinalizeOrder.html">Finalize</a>
+    </nav>
+
+    <div class="container">
+        <div class="contact-info">
+            <p>CEO: Quaterris Thomas</p>
+            <a href="tel:+14706687239">470-668-7239</a>
+            <p>Company Number: 770-887-665</p>
+            <a href="tel:+1770887665">770-887-665</a>
+            <a href="mailto:topopenergy332@gmail.com">topopenergy332@gmail.com</a>
+            <a href="http://www.topopenergy.com">
+        </div>
+
+        <div class="buttons">
+            <a href="tel:+14706687239" class="button">Call</a>
+            <a href="mailto:topopenergy332@gmail.com" class="button">Email</a>
+            <a href="contact.html" class="button">Write</a>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form">
+                                                              
+
+            <form action="submit_contact_form.php" method="POST">
+               
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
